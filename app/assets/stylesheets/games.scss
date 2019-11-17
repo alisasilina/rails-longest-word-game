@@ -1,0 +1,53 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  text-align: center;
+  margin-top: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.letters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.letters h1 {
+  font-size: 32px;
+  background: #bedcdd;
+  width: 60px;
+  margin: auto 6px;
+  line-height: 60px;
+  color: white;
+}
+
+.mycustom {
+    border: solid 1px #BEDCDD;
+    position: relative;
+    width: 500px;
+}
+.mycustom input[type=text] {
+    border: none;
+    width: 100%;
+    padding-right: 123px;
+}
+.mycustom .input-group-prepend {
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,34 @@
+<h1>New game</h1>
+
+<div class="letters">
+
+  <h1><%= @word[0] %></h1>
+  <h1><%= @word[1] %></h1>
+  <h1><%= @word[2] %></h1>
+  <h1><%= @word[3] %></h1>
+  <h1><%= @word[4] %></h1>
+  <h1><%= @word[5] %></h1>
+  <h1><%= @word[6] %></h1>
+  <h1><%= @word[7] %></h1>
+  <h1><%= @word[8] %></h1>
+  <h1><%= @word[9] %></h1>
+
+</div>
+
+<p class="mt-4">What is the longest word you can find?</p>
+
+<center>
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :grid, @word %>
+  <%= hidden_field_tag :start_time, @start_time %>
+  <div class="col-lg-10 mb-3">
+    <div class="input-group mycustom">
+      <input type="text" class="form-control rounded-0" name="word" placeholder="Type your word..." aria-describedby="inputGroupPrepend2" required>
+      <div class="input-group-prepend">
+        <input type="submit" value="Play" class="btn btn-info rounded-0" id="inputGroupPrepend2">
+      </div>
+    </div>
+  </div>
+</form>
+</center>

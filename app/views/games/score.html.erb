@@ -1,0 +1,17 @@
+<h1>Score</h1>
+
+<h3>Your result:</h3>
+<div class="score">
+  <p><%= @message %></p>
+  <p>Your word: <%= @attempt %></p>
+  <p>Your score: <%= @score %></p>
+  <p>Your time: <%= @time %></p>
+</div>
+
+<%= link_to "Try again", new_path %>
+<!-- result = run_game(attempt, grid, start_time, end_time)
+
+puts "Your word: #{attempt}"
+puts "Time Taken to answer: #{result[:time]}"
+puts "Your score: #{result[:score]}"
+puts "Message: #{result[:message]}" -->
